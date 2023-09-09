@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+	<div class="logo">
+    <a href="index.html"><img src="images/logo.png" width="125px"> </a>    
+    </div>
+    <nav>
+    <ul id="menuitems">
+    <li><a href="index.html">Home</a></li>  
+    <li><a href="product.html">Product</a></li>
+    <li><a href="account.html">Account</a></li>
+    </ul>
+    </nav>
+    <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>   
+    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+  <!-------Account-page------>  
+    <div class="account-page">
+    <div class="container">
+    <div class="row">
+    <div class="col-2">
+    <img src="images/image1.png" width="100%"></div> 
+    <div class="col-2">
+    <div class="form-container">
+    <div class="form-btn">
+    <span onclick="login()">login</span>
+    <span onclick="register()">Register</span>
+    <hr id="indicator">
+    </div> 
+        
+    <form id=loginform>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button type="submit" class="btn">Login</button>
+    <a href="">Forget Password</a>
+    </form>
+        
+        
+        
+    <form id=regform>
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button type="submit" class="btn">Register</button>
+    </form>
+    </div>
+    </div> 
+    </div>    
+    </div>
+    
+    </div>
+    
+    
+      
+
+    <!-------footer------>
+    <div class="footer">
+    <div class="container">
+    <div class="row">
+    <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and IOS App</p>
+        <div class="app-logo">
+        <img src="images/play-store.png">
+        <img src="images/app-store.png">
+        </div>
+    </div>  
+    <div class="footer-col-2">
+         <img src="images/logo-white.png">
+        <p>ake it yours by choosing from a variety of interchangeable bandsand unique faces </p>
+    </div> 
+    <div class="footer-col-3">
+    <h3>Useful Links</h3>
+    <ul>
+    <li><a href="">Coupon</a></li>  
+    <li><a href="">Blog Post</a></li>
+    <li><a href="">Return Policy</a></li>
+    <li><a href="">Join Affiliate</a></li>
+    <li><a href="">Account</a></li>
+    </ul>
+    </div> 
+    <div class="footer-col-4">
+    <h3>Follow Us</h3>
+    <ul class="U">
+    <li><a href="">Facebook</a></li>  
+    <li><a href="">Twitter</a></li>
+    <li><a href="">Instagram</a></li>
+    <li><a href="">Youtube</a></li>
+    </ul>
+    </div> 
+    </div> 
+        <hr>
+        <p class="copyright"> Copyright 2021 - Muhammad Hashim</p>
+    </div>
+    </div>
+ <!---------js for toggle menu------>
+    <script>
+    var menuitems =document.getElementById("menuitems");
+        
+     menuitems.style.maxHeight="0px";
+        
+        function menutoggle()
+        {
+            if(menuitems.style.maxHeight=="0px")
+            {
+                menuitems.style.maxHeight="200px";
+            }
+            else
+            {
+                 menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+    <!---------js for toggle Form------>
+    <script>
+    var loginform=document.getElementById("loginform");
+
+    var regform=document.getElementById("regform");
+    var indicator=document.getElementById("indicator");
+    function register()
+    {
+    regform.style.transform="translateX(0px)"; loginform.style.transform="translateX(0px)";  
+    indicator.style.transform="translateX(100px)";
+    }
+     function login()
+    {
+    regform.style.transform="translateX(300px)"; loginform.style.transform="translateX(300px)"; indicator.style.transform="translateX(0px)";  
+    }
+    </script>
+</body>
+</html>

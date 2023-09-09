@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+	<div class="logo">
+     <a href="index.html"><img src="images/logo.png" width="125px"> </a>     
+    </div>
+    <nav>
+    <ul id="menuitems">
+    <li><a href="index.html">Home</a></li>  
+    <li><a href="product.html">Product</a></li>
+    <li><a href="account.html">Account</a></li>
+    </ul>
+    </nav>
+    <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>     
+    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+      <!---------Single Products Details------>
+    <div class="small-cont single-product">
+    <div class="row">
+    <div class="col-2">
+     <img src="images/gallery-1.jpg" width="100%" id="productImg">
+        <div class="small-img-row">
+        <div class="small-img-col"><img src="images/gallery-1.jpg" width="100%" class="small-img"></div>
+        <div class="small-img-col"><img src="images/gallery-2.jpg" width="100%" class="small-img"></div>
+        <div class="small-img-col"><img src="images/gallery-3.jpg" width="100%" class="small-img"></div>
+        <div class="small-img-col"><img src="images/gallery-4.jpg" width="100%" class="small-img"></div>
+        </div>
+    </div>    
+    <div class="col-2">
+        <p> Home / T-Shirt</p>
+        <h1> Red Printed T-Shirt by HAS</h1>
+        <h4> $49.99</h4>
+            <select>
+            <option>Select Size</option>
+            <option>XXl</option>
+            <option>Xl</option>
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+            </select>
+        <input type="number" value="1">
+        <a href="cart.html" class="btn">Add to cart</a>
+        
+        <h3>Product Details <i class="fa fa-indent"></i></h3>
+        <p>ake it yours by choosing from a variety of interchangeable bandsand unique facesake it yours by choosing from a variety of interchangeable bandsand unique faces</p>
+    </div>  
+    </div>
+    </div>
+   <!---------Title------>  
+    <div class="small-cont">
+    <div class="row row-3">
+    <h2>Related Products</h2>
+    <p>View More</p>
+    </div>
+    </div>
+    
+    <div class="small-cont">
+          <div class="row">
+            <div class="col-3">
+            <img src="images/product-10.jpg">
+            <h4>Red T shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i> 
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star-half-o"></i>   
+            </div>
+            <p>$50.00</p>
+            </div> 
+            <div class="col-3">
+            <img src="images/product-11.jpg">
+            <h4>Red T shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i> 
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star-half-o"></i>   
+            </div>
+            <p>$50.00</p>
+            </div>    
+            <div class="col-3">
+            <img src="images/product-12.jpg"> 
+            <h4>Red T shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i> 
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star-half-o"></i>   
+            </div>
+            <p>$50.00</p>
+            </div>  
+            </div>
+        </div>  
+    
+    
+   <!---------Latest Products------>
+    <div class="small-cont">
+    </div>  
+
+
+    <!-------footer------>
+    <div class="footer">
+    <div class="container">
+    <div class="row">
+    <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and IOS App</p>
+        <div class="app-logo">
+        <img src="images/play-store.png">
+        <img src="images/app-store.png">
+        </div>
+    </div>  
+    <div class="footer-col-2">
+         <img src="images/logo-white.png">
+        <p>ake it yours by choosing from a variety of interchangeable bandsand unique faces </p>
+    </div> 
+    <div class="footer-col-3">
+    <h3>Useful Links</h3>
+    <ul>
+    <li><a href="">Coupon</a></li>  
+    <li><a href="">Blog Post</a></li>
+    <li><a href="">Return Policy</a></li>
+    <li><a href="">Join Affiliate</a></li>
+    <li><a href="">Account</a></li>
+    </ul>
+    </div> 
+    <div class="footer-col-4">
+    <h3>Follow Us</h3>
+    <ul class="U">
+    <li><a href="">Facebook</a></li>  
+    <li><a href="">Twitter</a></li>
+    <li><a href="">Instagram</a></li>
+    <li><a href="">Youtube</a></li>
+    </ul>
+    </div> 
+    </div> 
+        <hr>
+        <p class="copyright"> Copyright 2021 - Muhammad Hashim</p>
+    </div>
+    </div>
+ <!---------js for toggle menu------>
+    <script>
+    var menuitems =document.getElementById("menuitems");
+        
+     menuitems.style.maxHeight="0px";
+        
+        function menutoggle()
+        {
+            if(menuitems.style.maxHeight=="0px")
+            {
+                menuitems.style.maxHeight="200px";
+            }
+            else
+            {
+                 menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+    <!---------js for Product Gallery------>
+    <script>
+    var productImg=document.getElementById("productImg");
+    var SmallImg=document.getElementsByClassName("small-img");
+    SmallImg[0].onclick= function()
+    {
+        productImg.src= SmallImg[0].src;
+    }
+     SmallImg[1].onclick= function()
+    {
+        productImg.src= SmallImg[1].src;
+    }
+      SmallImg[2].onclick= function()
+    {
+        productImg.src= SmallImg[2].src;
+    }
+       SmallImg[3].onclick= function()
+    {
+        productImg.src= SmallImg[3].src;
+    }
+    </script>
+</body>
+</html>
